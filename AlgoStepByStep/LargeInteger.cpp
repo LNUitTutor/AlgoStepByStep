@@ -39,10 +39,7 @@ void MultBy(LargeNumber& x, const LargeNumber& y)
 			transfer = calc / 10;         // старшу - переносимо
 		}
 		if (transfer > 0)                 // запис числа стає довшим
-		{
 			prod.m_digits[++prod.last] += transfer;
-			transfer = 0;
-		}
 	}
 	x = prod;      // обчислений добуток потрапляє в перший множник
 }
